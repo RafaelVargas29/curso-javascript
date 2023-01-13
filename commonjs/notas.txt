@@ -1,0 +1,2 @@
+-Comandos
+ >npm init -y (inicia um projeto node)
