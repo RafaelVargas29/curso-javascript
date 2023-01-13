@@ -1,2 +1,4 @@
+-Module.exports: é o objeto que será exportado
+
 -Comandos
  >npm init -y (inicia um projeto node)
