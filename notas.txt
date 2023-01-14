@@ -1,0 +1,24 @@
+------------------------------COMMONJS------------------------------ 
+ >É o sistema de módulos nativo do node.js
+
+-ESM: Sistema de modulos nativo do ecmascript
+ >quando se trabalha com ESM, é preciso usar a extensão de arquivo '.mjs'
+ >__dirname: não existe no ESM
+ >__filename: não existe no ESM
+
+-Module.exports: é o objeto que será exportado
+
+------------------------------BABEL------------------------------
+ >É um transpilador de códigos, transforma o código js mais novo em um código mais antigo que tem um suporte melhor nos browsers
+ >Não precisa rodar no servidor, apenas no ambiente de desenvolvimento
+ >Deve-se criar duas pastas: 'src' e 'dist'. a pasta 'src', é o código que está no ambiente de desenvolvimento e ela gerará os arquivos da pasta 'dist', que estarão transpilados e prontos para ir para o servidor
+
+------------------------------COMANDOS------------------------------
+ >npm init -y (inicia um projeto node)
+ >npm i -D @babel/core (pacote principal para que o babel funcione)
+ >@babel/cli (pacote que faz com que seja possível utilizar o babel no terminal)
+ >@babel/preset-env (pacote que trás um conjunto de plugins necessários para que o código seja transpilado de acordo com o ambiente)
+ >npm i -D @babel/core @babel/cli @babel/preset-env (pacote completo para a utilização do babel)
+ >npx babel src -d dist (faz com que seja criado um arquivo no diretório 'dist' correspondente a um arquivo criado no diretório 'src')
+ >npx babel src -d dist -w (faz a mesma coisa que o 'npx babel src -d dist' mas fica ativo em modo escuta)
+ >npx babel src -d dist --presets=@babel/env (faz com que o código seja transpilado)
